@@ -1,0 +1,8 @@
+.g-4{
+    margin:auto;
+    display: flex;
+    width: 100vw;
+    height: 20vw;
+    align-items: center;
+    text-align: center;
+}
