@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./GridCards.css"
 import Download from "./download.jpeg"
 

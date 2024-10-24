@@ -1,0 +1,9 @@
+.H2 {
+    width: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 40px;
+}
