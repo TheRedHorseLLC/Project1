@@ -11,6 +11,7 @@ export default function App(){
 <div className="positions">
    <div className="Carousel"><Carousel /></div>
    <div className="GridCards"> <GridCards /></div>
+   <Carousel />
    <div className="Footer"> <Footer /> </div>
    </div>
     </div>

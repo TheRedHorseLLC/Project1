@@ -1,7 +1,7 @@
 .H2 {
-    width: 40px;
-    display: flex;
-    flex-direction: row;
+    width: 10px;
+    align-items: last baseline;
+    display: -webkit-box;
 }
 
 img {

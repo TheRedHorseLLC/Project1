@@ -3,11 +3,9 @@ import "./Footer.css"
 
 export default function footer(){
     return(
-        <div>
-           <section className="H2">
+        <div className="H2">
             <img src={Horse} />
-            <h1>Footer</h1>
-            </section>
+            <h4>TRH</h4>
         </div>
     )
 }
