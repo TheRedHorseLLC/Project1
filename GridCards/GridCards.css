@@ -1,4 +1,4 @@
-.g-4{
+.g4{
     margin:auto;
     display: flex;
     width: 100vw;
@@ -6,4 +6,7 @@
     align-items: center;
     text-align: center;
     padding: 40px;
+}
+.imgs{
+    width:100%;
 }
