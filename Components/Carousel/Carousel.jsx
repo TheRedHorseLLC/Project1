@@ -38,6 +38,8 @@ export default function carousel() {
               <Card.Title>{names}</Card.Title>
               <Card.Text>
                {inf}
+               <br />
+               <button className='But1'>Inspect</button>
               </Card.Text>
             </Card.Body>
           </Card>
@@ -61,6 +63,8 @@ export default function carousel() {
               <Card.Title>{names}</Card.Title>
               <Card.Text>
                 {inf}
+                <br />
+                <button className='But2'>Inspect</button>
               </Card.Text>
             </Card.Body>
           </Card>
@@ -84,6 +88,8 @@ export default function carousel() {
               <Card.Title>{names}</Card.Title>
               <Card.Text>
               {inf}
+              <br />
+              <button className='But3'>Inspect</button>
               </Card.Text>
             </Card.Body>
           </Card>
