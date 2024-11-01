@@ -15,19 +15,24 @@ export default function navBar(){
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/Home">Home</Nav.Link>
+            <Nav.Link href="/Inventory">Inventory</Nav.Link>
             <Nav.Link href="/About">About</Nav.Link>
             <Nav.Link href="/Help">Help</Nav.Link>
             <Nav.Link href="/Contact">Contact</Nav.Link>
             <NavDropdown title="Account" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Login</NavDropdown.Item>
+              <NavDropdown.Item href="/Login">Login</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Features
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Account Settings</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item href="/LocalMap">
                 Local Maps
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/SignUp">
+                Sign Up
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

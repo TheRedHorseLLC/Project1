@@ -1,0 +1,13 @@
+.Footer{
+    background-color: aliceblue;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .c2 {
+    display: flex;
+  }
+  
+  .c1{
+    display: flex;
+  }

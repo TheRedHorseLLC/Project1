@@ -5,6 +5,10 @@ import Home from "/Users/nduracak/P1/Components/Home/Home.jsx"
 import ErrorMessage from "/Users/nduracak/P1/Components/Error/ErrorMessage.jsx"
 import Help from "/Users/nduracak/P1/Components/Help/Help.jsx"
 import Contact from "/Users/nduracak/P1/Components/Contact/Contact.jsx"
+import Inventory from "/Users/nduracak/P1/Components/Inventory/Inventory.jsx"
+import LocalMap from "../Components/LocalMap/LocalMap"
+import Login from "/Users/nduracak/P1/Components/Login/Login.jsx"
+import SignUp from "/Users/nduracak/P1/Components/SignUP/SignUp.jsx"
 import "./App.css"
 
 const router = createBrowserRouter([
@@ -12,20 +16,36 @@ const router = createBrowserRouter([
   element:<Navbar />,
   children: [
     {
-     path: "/theredhorse/",
+     path: "/Home",
       element:<Home />
     },
     {
-      path: "/theredhorsellc/About",
+      path: "/Inventory",
+      element:<Inventory />
+    },
+    {
+      path: "/About",
       element:<About />
     },
     {
-      path: "/theredhoursellc/Help",
+      path: "/Help",
       element: <Help />
     },
     {
-      path: "theredhorsellc/Contact",
+      path: "/Contact",
       element: <Contact />
+    },
+    {
+      path: "/LocalMap",
+      element: <LocalMap />
+    },
+    {
+      path: "/Login",
+      element: <Login />
+    },
+    {
+      path: "/SignUp",
+      element: <SignUp />
     },
     {
       path: "*",
