@@ -17,6 +17,8 @@ export default function navBar(){
           <Nav className="ms-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/About">About</Nav.Link>
+            <Nav.Link href="/Help">Help</Nav.Link>
+            <Nav.Link href="/Contact">Contact</Nav.Link>
             <NavDropdown title="Account" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Login</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
