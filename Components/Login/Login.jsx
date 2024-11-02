@@ -37,7 +37,7 @@ return (
                     <label htmlFor={id+"-password"}>Password:</label>
                     <input type="password" name="password" autoComplete="on" onChange={handleInput} id={id+"-password"} placeholder="Create Your Password" value={loginData.password} />
                     
-                    <button className = "loginButton" variant="primary">Login</button>
+                    <button className = "loginButton">Login</button>
 
                 </div>
             </form>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./SignUp.css"
 
 export default function signUp(){
-             const [formData,setFormData] = React.useState(
+             const [formData,setFormData] = useState(
                 {
             firstName:"",
             lastName:"",
@@ -12,7 +12,7 @@ export default function signUp(){
             age: true
                 })
 
-            const id=React.useId()
+            const id = React.useId()
             
             /* handles the form functionality: checking the checkbox, the type, value, and name */
             function handleInput(event)
@@ -25,17 +25,33 @@ export default function signUp(){
                 }))
             }
             /*Handles the submit functionality */
-            function handleSubmit(event) {
+            const handleSubmit = async(event)=> {
                 event.preventDefault()
-                if(formData.password === formData.conPassword){
+                 try {
+                    const response = await fetch('/api/signup', {
+                        method: 'POST',
+                        headers: {
+                            'content-type': "application/json",
+                        },
+                        body: JSON.stringify(formData),
+                    })
+                        
+
+                if(response.ok){
                     console.log("Signed up")
                 }else{
-                    console.log("Passwords do not match")
+                    const errorData = await response.json
+                    console.error("Passwords do not match", errorData)
                 }
+            } catch (error) {
+                console.error("Sign up Error:", error)
+            }
+        }
                 if(formData.age){
                     console.log("You have agreed you are old enough")
+                } else{
+                    console.log("Not old enough")
                 }
-        }
 return (
         <div className = "newSU">
             <h3 className="SUTitle">Sign Up</h3>
@@ -61,10 +77,10 @@ return (
                         <label className= "checkT" htmlFor={id+"-age"}>I Am Old Enough</label>
                     </div>
 
-                    <button className = "SUButton" variant="primary">Sign Up</button>{' '}
+                    <button className = "SUButton" >Sign Up</button>{' '}
                     <div className="SULB">
                         <p>Already Have An Account?</p>
-                    <button className = "SUButton2" variant="primary">Login</button>{' '}
+                    <button className = "SUButton2">Login</button>{' '}
                     </div>
                 </div>
             </form>
